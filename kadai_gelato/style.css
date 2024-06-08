@@ -1,0 +1,288 @@
+html,body,main,section,ul,ol,li,p,a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
+/*================
+  PC用のスタイル
+=================*/
+@media screen and (min-width: 768px) {
+
+header {
+  height: 88px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+#menu-sp {
+  display: none;
+}
+
+.store_name {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+ul {
+  padding-left:0;
+  display: flex;
+}
+
+li{
+  list-style:none;
+}
+
+#nav-pc {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.padding {
+  padding-right: 48px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main {
+  width: 100%;
+}
+
+.pickup {
+  color: #EC306A;
+  font-size: 32px;
+}
+
+.explain {
+  font-size: 16px;
+  line-height:1.8em;
+}
+
+section {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.description {
+  padding-top: 80px;
+  padding-bottom: 72px;
+}
+
+/* 追加 */
+.about {
+  display: flex;
+  padding-top: 80px;
+}
+
+.container {
+  width: 100%;
+  background-color: #FFF0F9;
+  padding-bottom: 72px;
+}
+
+.span1 {
+  padding-right: 56px;
+}
+
+.span2 {
+  padding-right: 24px;
+}
+
+.img_about {
+  width: 544px;
+}
+
+.img_bnr {
+  width: 588px;
+}
+
+.text {
+  font-size: 24px;
+  color: #EC306A;
+  /* 追加 */
+  margin: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.ja {
+  position: relative;
+  margin: 0 10px;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  color: #000;
+}
+
+.ja::before {
+  content:"";
+  position: absolute;
+  background-color: #000;
+  width: 2px;
+  height: 100%;
+  left: -5px;
+}
+
+.information {
+  display: flex;
+}
+
+.access {
+  display: block;
+}
+
+iframe {
+  width: 550px;
+  padding-bottom: 100px;
+  padding-right: 48px;
+}
+
+.address {
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+
+.station {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
+.directions {
+  font-size: 16px;
+}
+
+footer {
+  padding-top: 48px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav-pc-footer {
+  word-spacing: 48px;
+}
+
+.copyright {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  padding-top: 140px;
+}
+
+}
+
+/*====================
+  スマートフォン用のスタイル
+=====================*/
+@media screen and (max-width: 767px) {
+
+body {
+  min-width: 375px;
+}
+
+#nav-pc {
+  display: none;
+}
+
+header {
+ height: 72px;
+ display: flex;
+ justify-content: space-between;
+ background-color: #222222;
+ color: #ffffff;
+ font-size: 24px;
+}
+
+.store_name {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+
+#menu-sp {
+  height: 72px;
+  width: 80px;
+}
+
+.main {
+  width: 100%;
+}
+
+.description{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+ 
+.pickup {
+  color: #EC306A;
+  font-size: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.explain {
+  font-size: 16px;
+  line-height:1.8em;
+}
+.img_about {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  background-color: #FFF0F9;
+  padding-bottom: 32px;
+}
+
+.img_bnr {
+  width: 100%;
+}
+ 
+.text {
+  font-size: 24px;
+  color: #EC306A;
+  /* 追加 */
+  margin: 0;
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.ja {
+  position: relative;
+  margin: 0 10px;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  color: #000;
+}
+
+.ja::before {
+  content:"";
+  position: absolute;
+  background-color: #000;
+  width: 2px;
+  height: 100%;
+  left: -5px;
+} 
+
+}
+
