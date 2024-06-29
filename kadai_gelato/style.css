@@ -1,0 +1,358 @@
+/* 修正要 */
+/* 画面を縮めたときに崩れないように　padding 画像はcalc */
+/* display:flex; から flex wrap:wrap;に変える　共通指定で問題ない　折り返したいものある場合のみ*/
+/* (修正済）footer Topics News Access の間はgap指定 gap;48px; */
+
+html,body,main,section,ul,ol,li,p,a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  max-width: 1264px;
+  margin: 0 auto
+}
+
+.main {
+  width: 100%;
+}
+
+.main-sp {
+  width: 100%;
+}
+
+.about {
+  display: flex;
+  flex: wrap;
+}
+
+iframe {
+  width: 100%;
+  height: 550px;
+}
+
+header {
+  position: relative;
+}
+
+.hamberger {
+  position: absolute;
+  width: 64px;
+  height: 50px;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamberger span {
+  position: absolute;
+  width: 100%;
+  height: 6px;
+  background-color: #fff;
+  left: 0;
+}
+
+.hamberger span:first-child {
+  top: 0;
+}
+
+.hamberger span:nth-child(2) {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.hamberger span:last-child {
+  bottom: 0;
+}
+
+.explain {
+  font-size: 16px;
+  line-height:1.8em;
+}
+
+.ja {
+  position: relative;
+  margin: 0 10px;
+  width: 2px;
+  height: 100%;
+  top: 0;
+  color: #000;
+}
+
+.ja::before {
+  content:"";
+  position: absolute;
+  background-color: #000;
+  width: 2px;
+  height: 100%;
+  left: -5px;
+}
+
+.address {
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+
+.station {
+  font-size: 18px;
+  font-weight: bold;
+  padding-bottom: 16px;
+}
+
+.directions {
+  font-size: 16px;
+}
+
+li{
+  list-style:none;
+}
+
+.nav-gap {
+  gap:48px;
+}
+
+/*================
+  PC用のスタイル
+=================*/
+@media screen and (min-width: 768px) { 
+
+header {
+  height: 88px;
+  padding-left: 120px;
+  padding-right: 120px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.hamberger {
+  display: none;
+}
+
+.store_name {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+ul {
+  padding-left:0;
+  display: flex;
+}
+
+#nav-pc {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.padding {
+  padding-right: 48px;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.main-sp {
+  display: none;
+}
+
+.pickup {
+  color: #EC306A;
+  font-size: 32px;
+}
+
+section {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.description {
+  padding-top: 80px;
+  padding-bottom: 72px;
+}
+
+.about {
+  padding-top: 80px;
+}
+
+.container {
+  width: 100%;
+  background-color: #FFF0F9;
+  padding-bottom: 72px;
+}
+
+/* 要確認！！ */
+.img_about {
+  width: calc(100vw/1264 *544);
+  max-width: 544px;
+}
+
+.span1 {
+  padding-right: 56px;
+}
+
+.span2 {
+  padding-right: 24px;
+}
+
+.text {
+  font-size: 24px;
+  color: #EC306A;
+  margin: 0;
+  padding-top: 48px;
+  padding-bottom: 24px;
+}
+
+.img_bnr {
+  width: 588px;
+}
+
+.information {
+  display: flex;
+}
+
+.access {
+  display: block;
+}
+
+iframe {
+  width: 550px;
+  padding-bottom: 100px;
+  padding-right: 48px;
+}
+
+footer {
+  padding-top: 48px;
+  padding-left: 100px;
+  padding-right: 100px;
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.copyright {
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  padding-top: 140px;
+}
+
+}
+
+/*====================
+  スマートフォン用のスタイル
+=====================*/
+@media screen and (max-width: 767px) {
+
+body {
+  min-width: 375px;
+}
+
+#nav-pc {
+  display: none;
+}
+
+header {
+ height: 72px;
+ display: flex;
+ justify-content: space-between;
+ background-color: #222222;
+ color: #ffffff;
+ font-size: 24px;
+}
+
+.store_name {
+  font-size: 24px;
+  padding-top: 20px;
+}
+
+
+#menu-sp {
+  height: 72px;
+  width: 80px;
+}
+
+.main {
+  display: none;
+}
+
+.description{
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.about {
+  flex-direction: column;
+}
+
+.pickup {
+  color: #EC306A;
+  font-size: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.container {
+  width: 100%;
+  background-color: #FFF0F9;
+  padding-bottom: 32px;
+}
+
+.unit {
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.text {
+  font-size: 24px;
+  color: #EC306A;
+  margin: 0;
+  padding-top: 32px;
+  padding-bottom: 12px;
+}
+
+.img_bnr {
+  width: 100%;
+}
+
+.address {
+  padding-top: 24px;
+}
+
+.directions {
+  padding-bottom: 16px;
+}
+
+footer {
+  padding-top: 24px;
+  padding-bottom: 12px;
+  background-color: #222222;
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+}
+
+.footer-padding {
+  display: inline;
+}
+
+#nav-footer {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.copyright {
+  font-size: 12px;
+}
+
+
+}
